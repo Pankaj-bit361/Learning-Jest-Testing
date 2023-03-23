@@ -5,7 +5,7 @@ describe("Test the counter Component",()=>{
     it("Counter should be Present in Dom",()=>{
         render(<Counter/>)
         const text=screen.getByTestId("counter");
-        const button=screen.getByTestId("add-button");
+        const button=screen.getByTestId("custom-button");
 
         expect(text).toBeInTheDocument()
         expect(button).toBeInTheDocument()
@@ -23,7 +23,7 @@ render(<Counter/>)
         const text=screen.getByTestId("counter");
         expect(text).toHaveTextContent("Counter:0");
 
-        const addBtn=screen.getByTestId("add-button");
+        const addBtn=screen.getByTestId("custom-button");
         fireEvent.click(addBtn);
         screen.debug()
         expect(text).toHaveTextContent("Counter:1");

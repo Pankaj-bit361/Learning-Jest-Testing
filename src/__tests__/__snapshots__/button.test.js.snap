@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing button Component Should have snapshot 1`] = `
+<div>
+  <button
+    className="teal large"
+    data-testid="custom-button"
+  >
+    Click Me
+  </button>
+</div>
+`;

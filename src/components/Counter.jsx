@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from './Button'
 
 const Counter = () => {
 const [count,setcount]=useState(0)
@@ -9,7 +10,8 @@ const handleadd=()=>{
   return (
     <div>
       <h2 data-testid="counter">Counter:{count}</h2>
-      <button data-testid="add-button" onClick={handleadd}>ADD</button>
+      {/* <button data-testid="add-button" onClick={handleadd}>ADD</button> */}
+      <Button color={"teal"} size={"small"} func={handleadd}>ADD</Button>
     </div>
   )
 }
